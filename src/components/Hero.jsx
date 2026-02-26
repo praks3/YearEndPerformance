@@ -45,7 +45,7 @@ const Hero = () => {
         </span>
         <img
           id="zach-image"
-          src="src/assets/photo.jpeg"
+          src="/photo.jpeg"
           alt="Photo of Divaynshi Srivastava"
           className="cursor-pointer xl:mt-10 inline-block animate__animated animate__fadeIn delay2 border-gray-900 duration-300 ease hover:border-green-400 shadow-md border-8 h-80 w-80 md:w-96 md:h-96 rounded-full"
         />

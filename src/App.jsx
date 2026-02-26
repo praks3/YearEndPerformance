@@ -65,7 +65,7 @@ function App() {
                 opacity: 0,
                 filter: "blur(20px)",
               }}
-              transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             >
               {greetings[languageIndex]}
             </motion.span>
