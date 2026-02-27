@@ -60,7 +60,7 @@ const Quarter4 = () => {
 
                   <li className="list-none">
                     <ul className="flex flex-wrap gap-x-2 gap-y-1 list-disc list-inside">
-                      <li>Namo App Revamp</li>
+                      <li>NaMo App Revamp</li>
                       <li>Parakram Diwas</li>
                       <li>Mann Ki Baat Quiz</li>                      <li>National Science Day</li>
 
@@ -92,7 +92,7 @@ const Quarter4 = () => {
 
               <div className="p-6 text-center bg-gradient-to-r from-purple-300 to-purple-400 text-gray-900">
                 <h3 className="text-3xl font-extrabold">
-                  Namo
+                  NaMo
                 </h3>
               </div>
 

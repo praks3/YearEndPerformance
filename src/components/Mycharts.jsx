@@ -23,7 +23,7 @@ const yearlyIssueTypeData = [
 
 const yearlyApplicationData = [
   { name: "JioMeet/JioEvents", value: 18 },
-  { name: "Namo", value: 46 },
+  { name: "NaMo", value: 46 },
   { name: "JioWorkspace", value: 4 },
   { name: "PeopleFirst", value: 5 },
     { name: "Orion", value: 12 },

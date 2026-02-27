@@ -88,7 +88,7 @@ const Quarter2 = () => {
 
               <div className="p-6 text-center bg-gradient-to-r from-purple-300 to-purple-400 text-gray-900">
                 <h3 className="text-3xl font-extrabold">
-                  Namo
+                  NaMo
                 </h3>
               </div>
 
