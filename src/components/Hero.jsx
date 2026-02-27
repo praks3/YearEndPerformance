@@ -9,7 +9,7 @@ const Hero = () => {
         <span className="hidden md:block lg:block">
 
           {/* DS (with border effect) */}
-          <a href="" className="kill-link-style">
+          <a href="/" className="kill-link-style">
             <span
               className="
                 inline-block

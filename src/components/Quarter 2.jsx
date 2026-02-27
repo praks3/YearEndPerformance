@@ -140,6 +140,7 @@ const Quarter2 = () => {
             <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
               <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
                 <li>JioGenie Feedbacks</li>
+                <li>JioWorkspace</li>
               </ul>
             </div>
           </div>

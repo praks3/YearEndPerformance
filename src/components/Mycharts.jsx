@@ -15,9 +15,9 @@ import CustomQuarterTooltip from "./CustomQuarterTooltip";
 
 const yearlyIssueTypeData = [
   { name: "Blocker", count: 2 },
-  { name: "Critical", count: 14 },
-  { name: "Major", count: 46 },
-  { name: "Normal", count: 24 },
+  { name: "Critical", count: 15 },
+  { name: "Major", count: 48 },
+  { name: "Normal", count: 27 },
   { name: "Minor", count: 2 },
 ];
 
@@ -26,7 +26,7 @@ const yearlyApplicationData = [
   { name: "Namo", value: 46 },
   { name: "JioWorkspace", value: 4 },
   { name: "PeopleFirst", value: 5 },
-    { name: "Orion", value: 12 },
+    { name: "Orion", value: 18 },
         { name: "Other", value: 3 },
 
 ];
@@ -64,12 +64,12 @@ const quarterData = [
   },
   {
     name: "Q4",
-    totalIssues: 27,
-    score: 132,
+    totalIssues: 33,
+    score: 159,
     blocker: 0,
-    critical: 5,
-    major: 14,
-    normal: 7,
+    critical: 6,
+    major: 16,
+    normal: 10,
     minor: 1,
   },
 ];
@@ -88,8 +88,8 @@ const sortedApplicationData = [...yearlyApplicationData].sort(
 );
 
 const Dashboard = () => {
-  const totalYearScore = 436; 
-  const totalYearIssues = 88; 
+  const totalYearScore = 463; 
+  const totalYearIssues = 94; 
 
   return (
     <div className="w-full bg-gray-100 p-10 space-y-6">
