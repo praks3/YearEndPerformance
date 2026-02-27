@@ -5,55 +5,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 
-// 🔥 Lazy load heavy components
+// Lazy heavy components
 const MyChart = lazy(() => import("./components/Mycharts"));
 const Quarter1 = lazy(() => import("./components/Quarter 1"));
 const Quarter2 = lazy(() => import("./components/Quarter 2"));
 const Quarter3 = lazy(() => import("./components/Quarter 3"));
 const Quarter4 = lazy(() => import("./components/Quarter 4"));
-
-/* ===========================
-   Lazy Section Component
-=========================== */
-function LazySection({ children }) {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // load once
-        }
-      },
-      { threshold: 0.15 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div ref={ref}>
-      {isVisible && (
-        <Suspense fallback={<div className="h-40" />}>
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.7,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-          >
-            {children}
-          </motion.div>
-        </Suspense>
-      )}
-    </div>
-  );
-}
 
 function App() {
   const [languageIndex, setLanguageIndex] = useState(0);
@@ -70,8 +27,7 @@ function App() {
     "नमस्ते",
   ];
 
-  /* ================= SPLASH ROTATION ================= */
-
+  /* Rotate greetings */
   useEffect(() => {
     const interval = setInterval(() => {
       setLanguageIndex((prev) => {
@@ -83,47 +39,33 @@ function App() {
           return prev;
         }
       });
-    }, 320);
+    }, 500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
-      {/* ================= MAIN APP ================= */}
+
       <div className="min-h-screen bg-white flex flex-col">
         <Header />
 
-        {/* Hero loads immediately */}
         <main className="flex-1 flex items-center justify-center">
           <Hero />
         </main>
 
-        {/* Lazy sections load on scroll */}
-        <LazySection>
+        <Suspense fallback={null}>
           <MyChart />
-        </LazySection>
-
-        <LazySection>
           <Quarter1 />
-        </LazySection>
-
-        <LazySection>
           <Quarter2 />
-        </LazySection>
-
-        <LazySection>
           <Quarter3 />
-        </LazySection>
-
-        <LazySection>
           <Quarter4 />
-        </LazySection>
+        </Suspense>
 
         <Footer />
       </div>
 
-      {/* ================= SPLASH OVERLAY ================= */}
+      {/* SPLASH */}
       {!hideSplash && (
         <div className="fixed inset-0 flex justify-center items-center bg-white z-50 overflow-hidden">
           <motion.span
@@ -132,17 +74,17 @@ function App() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={
               startExit
-                ? { scale: 6, opacity: 0 } // light animation (no heavy blur)
+                ? { scale: 10 }
                 : { scale: 1, opacity: 1 }
             }
             transition={
               startExit
-                ? { duration: 1.1, ease: [0.22, 1, 0.36, 1] }
+                ? { duration: 0.4, ease: [0.22, 1, 0.36, 1] }
                 : { duration: 0.4 }
             }
             onAnimationComplete={() => {
               if (startExit) {
-                setHideSplash(true);
+                setHideSplash(true); // remove instantly
               }
             }}
           >

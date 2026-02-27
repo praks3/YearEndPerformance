@@ -9,7 +9,7 @@ const Hero = () => {
         <span className="hidden md:block lg:block">
 
           {/* DS (with border effect) */}
-          <a href="#" className="kill-link-style">
+          <a href="" className="kill-link-style">
             <span
               className="
                 inline-block
@@ -22,7 +22,6 @@ const Hero = () => {
                 text-2xl xl:text-3xl
                 font-extrabold
                 transition-all
-                duration-300
                 hover:border-green-400
               "
             >
@@ -40,7 +39,6 @@ const Hero = () => {
               font-extrabold
               cursor-pointer
               transition-colors
-              duration-300
               hover:text-green-400
             "
           >
@@ -57,7 +55,6 @@ const Hero = () => {
               font-extrabold
               cursor-pointer
               transition-colors
-              duration-300
               hover:text-green-400
             "
           >
@@ -74,7 +71,6 @@ const Hero = () => {
               font-extrabold
               cursor-pointer
               transition-colors
-              duration-300
               hover:text-green-400
             "
           >
@@ -91,7 +87,6 @@ const Hero = () => {
               font-extrabold
               cursor-pointer
               transition-colors
-              duration-300
               hover:text-green-400
             "
           >
@@ -108,7 +103,6 @@ const Hero = () => {
               font-extrabold
               cursor-pointer
               transition-colors
-              duration-300
               hover:text-green-400
             "
           >
@@ -129,7 +123,6 @@ const Hero = () => {
             border-gray-900
             hover:border-green-400
             transition-all
-            duration-300
             ease
             shadow-md
             h-80 w-80 md:w-96 md:h-96
