@@ -27,6 +27,8 @@ const yearlyApplicationData = [
   { name: "JioWorkspace", value: 4 },
   { name: "PeopleFirst", value: 5 },
     { name: "Orion", value: 12 },
+        { name: "Other", value: 3 },
+
 ];
 
 const quarterData = [
@@ -72,8 +74,14 @@ const quarterData = [
   },
 ];
 
-const COLORS = ["#EF4444", "#F97316", "#FACC15", "#22C55E"];
-
+const COLORS = [
+  "#EF4444", // Red
+  "#F97316", // Orange
+  "#FACC15", // Yellow
+  "#22C55E", // Green
+  "#3B82F6", // Blue
+  "#8B5CF6", // Purple
+];
 const Dashboard = () => {
   const totalYearScore = 436; 
   const totalYearIssues = 88; 
@@ -125,7 +133,7 @@ const Dashboard = () => {
           {/* Application Pie */}
           <div className="bg-white p-6 rounded-xl shadow">
             <h3 className="text-xl font-bold mb-4">
-              Issues per Application
+              Issues per Product
             </h3>
 
             <ResponsiveContainer width="100%" height={300}>
