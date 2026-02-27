@@ -42,15 +42,14 @@ const Quarter1 = () => {
               <div className="bg-gray-700 text-gray-200 p-6 flex-1">
                 <ul className="list-disc list-inside text-left text-sm md:text-base m-0 space-y-3">
                   <li className="list-none">
-                    <ul className="flex flex-wrap gap-x-2 gap-y-1 list-disc list-inside">
+                    <ul className="flex flex-wrap gap-x-6 gap-y-1 list-disc list-inside">
                       <li>BJP Journey</li>
                       <li>Mudra Yojana</li>
                       <li>11th Anniversary</li>
                       <li>World Heritage Day</li>
-                      <li>Yoga Day</li>
+                      <li>Yoga Day </li>
                       <li>JITO</li>
                       <li>Ayushman Bharat Diwas</li>
-                      <li>Content Validation</li>
                     </ul>
                   </li>
 
@@ -81,7 +80,7 @@ const Quarter1 = () => {
               </div>
 
               <div className="p-6 text-center bg-gradient-to-r from-purple-300 to-purple-400 text-gray-900">
-                <h3 className="text-3xl font-extrabold">NaMo</h3>
+                <h3 className="text-3xl font-extrabold">Namo</h3>
               </div>
             </div>
           </div>
@@ -123,7 +122,7 @@ const Quarter1 = () => {
 
       <div
         id="other_task"
-        className="w-full bg-gray-50 text-gray-900 py-20 px-6"
+        className="w-full bg-gray-100 text-gray-900 py-20 px-6"
       >
         <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-center">
           Other Initiatives
@@ -140,7 +139,7 @@ const Quarter1 = () => {
                 <li>JioRooms Voice Talk</li>
                 <li>JioGenie Feedbacks</li>
                 <li>Generated Test Images using Postman</li>
-                <li>Validated Gamma & CLAHE Backend Models</li>
+                <li>Validated GAMMA & CLAHE Backend Models</li>
                 <li>Created Comparison Validation Report</li>
               </ul>
             </div>

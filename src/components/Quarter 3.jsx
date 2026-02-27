@@ -66,7 +66,7 @@ const Quarter3 = () => {
 
                   <li className="list-none">
                     <ul className="flex flex-wrap gap-x-2 gap-y-1 list-disc list-inside">
-                      <li> NaMo Website and App revamp</li>
+                      <li> Namo Website and App revamp</li>
                     </ul>
                   </li>
 
@@ -96,7 +96,7 @@ const Quarter3 = () => {
 
               <div className="p-6 text-center bg-gradient-to-r from-purple-300 to-purple-400 text-gray-900">
                 <h3 className="text-3xl font-extrabold">
-                  NaMo
+                  Namo
                 </h3>
               </div>
 

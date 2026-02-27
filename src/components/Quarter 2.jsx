@@ -88,7 +88,7 @@ const Quarter2 = () => {
 
               <div className="p-6 text-center bg-gradient-to-r from-purple-300 to-purple-400 text-gray-900">
                 <h3 className="text-3xl font-extrabold">
-                  NaMo
+                  Namo
                 </h3>
               </div>
 
@@ -134,7 +134,15 @@ const Quarter2 = () => {
 
         {/* 2 Equal Columns */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto items-stretch">
+ <div className="flex flex-col">
+            <h2 className="text-4xl font-bold mb-6 text-center">Other Tasks</h2>
 
+            <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
+              <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
+                <li>JioGenie Feedbacks</li>
+              </ul>
+            </div>
+          </div>
   {/* RIGHT COLUMN — Courses */}
   <div className="flex flex-col">
     <h2 className="text-4xl font-bold mb-6 text-center">

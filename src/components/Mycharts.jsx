@@ -23,7 +23,7 @@ const yearlyIssueTypeData = [
 
 const yearlyApplicationData = [
   { name: "JioMeet/JioEvents", value: 18 },
-  { name: "NaMo", value: 46 },
+  { name: "Namo", value: 46 },
   { name: "JioWorkspace", value: 4 },
   { name: "PeopleFirst", value: 5 },
     { name: "Orion", value: 12 },
@@ -82,6 +82,11 @@ const COLORS = [
   "#3B82F6", // Blue
   "#8B5CF6", // Purple
 ];
+
+const sortedApplicationData = [...yearlyApplicationData].sort(
+  (a, b) => b.value - a.value
+);
+
 const Dashboard = () => {
   const totalYearScore = 436; 
   const totalYearIssues = 88; 
@@ -135,24 +140,61 @@ const Dashboard = () => {
             <h3 className="text-xl font-bold mb-4">
               Issues per Product
             </h3>
+<ResponsiveContainer width="100%" height={300}>
+  <PieChart>
+    <Pie
+      data={sortedApplicationData}
+      dataKey="value"
+      nameKey="name"
+      outerRadius={100}
+      label
+    >
+      {sortedApplicationData.map((entry, index) => (
+        <Cell key={index} fill={COLORS[index % COLORS.length]} />
+      ))}
+    </Pie>
 
-            <ResponsiveContainer width="100%" height={300}>
-              <PieChart>
-                <Pie
-                  data={yearlyApplicationData}
-                  dataKey="value"
-                  nameKey="name"
-                  outerRadius={100}
-                  label
-                >
-                  {yearlyApplicationData.map((entry, index) => (
-                    <Cell key={index} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip />
-                <Legend />
-              </PieChart>
-            </ResponsiveContainer>
+    <Tooltip />
+
+    <Legend
+      content={() => (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: "20px",
+            marginTop: "10px",
+          }}
+        >
+          {sortedApplicationData.map((entry, index) => (
+            <div
+              key={index}
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: 10,
+                  height: 12,
+                  backgroundColor: COLORS[index % COLORS.length],
+                  marginRight: 3,
+                  borderRadius: 2,
+                }}
+              />
+              <span>
+                {entry.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+    />
+  </PieChart>
+</ResponsiveContainer>
+       
           </div>
         </div>
       </div>
