@@ -13,9 +13,9 @@ const CustomQuarterTooltip = ({ active, payload, label }) => {
         <p>Blocker : {data.blocker}</p>
         <p>Critical : {data.critical}</p>
         <p>Major : {data.major}</p>
-                <p>Minor : {data.minor}</p>
         <p>Normal : {data.normal}</p>
-        
+                        <p>Minor : {data.minor}</p>
+
       </div>
     );
   }

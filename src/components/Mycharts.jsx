@@ -147,7 +147,6 @@ const Dashboard = () => {
       dataKey="value"
       nameKey="name"
       outerRadius={100}
-      label
     >
       {sortedApplicationData.map((entry, index) => (
         <Cell key={index} fill={COLORS[index % COLORS.length]} />
@@ -181,7 +180,7 @@ const Dashboard = () => {
                   height: 12,
                   backgroundColor: COLORS[index % COLORS.length],
                   marginRight: 3,
-                  borderRadius: 2,
+                  borderRadius: 1,
                 }}
               />
               <span>
