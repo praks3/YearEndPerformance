@@ -14,16 +14,16 @@ import {
 import CustomQuarterTooltip from "./CustomQuarterTooltip";
 
 const yearlyIssueTypeData = [
-  { name: "Blocker", count: 5 },
-  { name: "Critical", count: 12 },
-  { name: "Major", count: 40 },
-  { name: "Normal", count: 18 },
-  { name: "Minor", count: 1 },
+  { name: "Blocker", count: 2 },
+  { name: "Critical", count: 14 },
+  { name: "Major", count: 46 },
+  { name: "Normal", count: 24 },
+  { name: "Minor", count: 2 },
 ];
 
 const yearlyApplicationData = [
   { name: "JioMeet", value: 25 },
-  { name: "Namo Modules", value: 30 },
+  { name: "Namo", value: 46 },
   { name: "JioWorkspace", value: 10 },
   { name: "PeopleFirst", value: 10 },
 ];
@@ -74,12 +74,8 @@ const quarterData = [
 const COLORS = ["#EF4444", "#F97316", "#FACC15", "#22C55E"];
 
 const Dashboard = () => {
-  const totalYearIssues = yearlyIssueTypeData.reduce(
-    (sum, item) => sum + item.count,
-    0,
-  );
-
-  const totalYearScore = 356; // Example yearly score
+  const totalYearScore = 436; 
+  const totalYearIssues = 88; 
 
   return (
     <div className="w-full bg-gray-100 p-10 space-y-6">
@@ -91,7 +87,7 @@ const Dashboard = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-6 bg-white p-8 rounded-xl shadow text-center">
             <h3 className="text-lg font-semibold text-gray-600">
-              Total Issues (Year)
+              Total Issues
             </h3>
             <p className="text-4xl font-extrabold text-red-500 mt-2">
               {totalYearIssues}
@@ -100,7 +96,7 @@ const Dashboard = () => {
 
           <div className="col-span-12 md:col-span-6 bg-white p-8 rounded-xl shadow text-center">
             <h3 className="text-lg font-semibold text-gray-600">
-              Total Score (Year)
+              Total Score
             </h3>
             <p className="text-4xl font-extrabold text-blue-500 mt-2">
               {totalYearScore}
@@ -112,7 +108,7 @@ const Dashboard = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Issue Type Per Year */}
           <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="text-xl font-bold mb-4">Issue Type Count (Year)</h3>
+            <h3 className="text-xl font-bold mb-4">Issue Type Count</h3>
 
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={yearlyIssueTypeData}>
@@ -128,7 +124,7 @@ const Dashboard = () => {
           {/* Application Pie */}
           <div className="bg-white p-6 rounded-xl shadow">
             <h3 className="text-xl font-bold mb-4">
-              Issues per Application (Year)
+              Issues per Application
             </h3>
 
             <ResponsiveContainer width="100%" height={300}>

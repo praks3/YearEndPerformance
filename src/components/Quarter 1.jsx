@@ -119,54 +119,46 @@ const Quarter1 = () => {
         </div>
       </div>
 
-      
       <div
-  id="other_task"
-  className="w-full bg-gray-50 text-gray-900 py-20 px-6"
->
-  <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-center">
-    Other Initiatives
-  </h2>
+        id="other_task"
+        className="w-full bg-gray-50 text-gray-900 py-20 px-6"
+      >
+        <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-center">
+          Other Initiatives
+        </h2>
 
-  {/* 2 Equal Columns */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        {/* 2 Equal Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto items-stretch">
+          {/* LEFT COLUMN — Other Tasks */}
+          <div className="flex flex-col">
+            <h2 className="text-4xl font-bold mb-6 text-center">Other Tasks</h2>
 
-    {/* LEFT COLUMN — Other Tasks */}
-    <div>
-      <h2 className="text-4xl font-bold mb-6 text-center">
-        Other Tasks
-      </h2>
+            <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
+              <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
+                <li>JioRooms Voice Talk</li>
+                <li>JioGenie Feedbacks</li>
+                <li>Generated Test Images using Postman</li>
+                <li>Validated Gamma & CLAHE Backend Models</li>
+                <li>Created Comparison Validation Report</li>
+              </ul>
+            </div>
+          </div>
 
-      <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center h-full">
-        <ul className="space-y-4 font-bold text-lg text-left">
-          <li>JioRooms Voice Talk</li>
-          <li>JioGenie Feedbacks</li>
-          <li>Generated Test Images using Postman</li>
-          <li>Validated Gamma & CLAHE Backend Models</li>
-          <li>Created Comparison Validation Report</li>
-        </ul>
+          {/* RIGHT COLUMN — Courses */}
+          <div className="flex flex-col">
+            <h2 className="text-4xl font-bold mb-6 text-center">Courses</h2>
+
+            <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
+              <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
+                <li>Foundation of Software Testing and Validation</li>
+                <li>Spring Boot for Beginners</li>
+                <li>Learning REST APIs</li>
+                <li>Time Management Fundamentals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    {/* RIGHT COLUMN — Courses */}
-    <div>
-      <h2 className="text-4xl font-bold mb-6 text-center">
-        Courses
-      </h2>
-
-      <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center h-full">
-        <ul className="space-y-4 font-bold text-lg text-left">
-          <li>Advanced React Development</li>
-          <li>Backend Image Processing</li>
-          <li>API Testing using Postman</li>
-          <li>Performance Optimization</li>
-          <li>Frontend Architecture Design</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</div>
     </section>
   );
 };

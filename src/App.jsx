@@ -61,7 +61,7 @@ function App() {
               initial={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
               animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
               exit={{
-                scale: 8,
+                scale: 20,
                 opacity: 0,
                 filter: "blur(20px)",
               }}

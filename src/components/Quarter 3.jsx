@@ -138,43 +138,53 @@ const Quarter3 = () => {
 
         </div>
       </div>
-
-
-      <div
+ <div
         id="other_task"
         className="w-full bg-gray-50 text-gray-900 py-20 px-6"
       >
-       <h2 className="text-4xl md:text-6xl font-extrabold mb-6 text-center">
-  Other Task
-</h2>
+        <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-center">
+          Other Initiatives
+        </h2>
 
-        <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-12 md:col-span-6 lg:col-span-4">
-            
-              <div className="cursor-pointer bg-white hover:shadow-xl shadow-md p-6 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center">
-               
-                <p className="mt-2 font-bold text-xl">
-JioRooms Voice Talk, JioGenie feedbacks
-                </p>
-              </div>
-          </div>
-          <div className="col-span-12 md:col-span-6 lg:col-span-4">
-            
-              <div className="cursor-pointer bg-white hover:shadow-xl shadow-md p-6 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center">
-                 <p className="mt-2 font-bold text-xl">
-Generated test images using Postman
-                </p>
-                <p className="mt-2 font-bold text-xl">
-Validated Gamma & CLAHE backend image models
-                </p>
-                 <p className="mt-2 font-bold text-xl">
-Created comparison validation report
-                </p>
-              </div>
-        </div>
-        </div>
+        {/* 2 Equal Columns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto items-stretch">
+
+  {/* LEFT COLUMN — Other Tasks */}
+  <div className="flex flex-col">
+    <h2 className="text-4xl font-bold mb-6 text-center">
+      Other Tasks
+    </h2>
+
+    <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
+      <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
+        <li>JioRooms Voice Talk</li>
+        <li>JioGenie Feedbacks</li>
+        <li>Generated Test Images using Postman</li>
+        <li>Validated Gamma & CLAHE Backend Models</li>
+        <li>Created Comparison Validation Report</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* RIGHT COLUMN — Courses */}
+  <div className="flex flex-col">
+    <h2 className="text-4xl font-bold mb-6 text-center">
+      Courses
+    </h2>
+
+    <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
+      <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
+        <li>Generative AI vs Traditional AI</li>
+        <li>Chatgpt prompt engineering for developers project</li>
+        <li>Getting started with Power BI</li>
+        <li>Azure Devops for Beginners</li>
+        <li>Networking Foundation Networking Basics</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
       </div>
-
 
     </section>
   );
