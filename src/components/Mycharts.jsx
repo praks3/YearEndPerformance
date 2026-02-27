@@ -22,10 +22,11 @@ const yearlyIssueTypeData = [
 ];
 
 const yearlyApplicationData = [
-  { name: "JioMeet", value: 25 },
+  { name: "JioMeet/JioEvents", value: 18 },
   { name: "Namo", value: 46 },
-  { name: "JioWorkspace", value: 10 },
-  { name: "PeopleFirst", value: 10 },
+  { name: "JioWorkspace", value: 4 },
+  { name: "PeopleFirst", value: 5 },
+    { name: "Orion", value: 12 },
 ];
 
 const quarterData = [

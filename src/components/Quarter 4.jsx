@@ -20,7 +20,7 @@ const Quarter4 = () => {
                     <li>
                     <span>Total Issues – </span>
                     <span className="text-green-400 font-semibold">
-                      4 Normal
+                      4 Normal {" , "}
                     </span>
 <span className="text-blue-400 font-semibold">
                       1 Minor
@@ -70,10 +70,10 @@ const Quarter4 = () => {
                   <li>
                     <span>Total Issues – </span>
                     <span className="text-orange-400 font-semibold">
-                      3 Critical{" "}
+                      3 Critical{" "} {" , "}
                     </span>
                     <span className="text-yellow-400 font-semibold">
-                      4 Major{" "}
+                      4 Major{" "} {" , "}
                     </span>
                     <span className="text-green-400 font-semibold">
                       2 Normal
@@ -113,17 +113,13 @@ const Quarter4 = () => {
 <li><span className="font-semibold">
                        Orion – AI Hiring Platform
                     </span> - Assisted in content verification by comparing data between Excel sheets and Figma designs, and evaluated the top three AI platforms to identify key features.</li>
-                   
-                   <li><span className="font-semibold">
-                      Monthly Review Website
-                    </span> - Designed & implemented the login flow while establishing the backend project structure for the Monthly Review website. Managed sprint planning, defined system logic, delegated responsibilities, and supported the team by resolving queries.</li>
                   <li>
                     Total Issues –
                     <span className="text-orange-400 font-semibold">
-                      {" "}2 Critical
+                      {" "}2 Critical {" , "}
                     </span>
                     <span className="text-yellow-400 font-semibold">
-                      {" "}10 Major
+                      {" "}10 Major {" , "}
                     </span>
                     <span className="text-green-400 font-semibold">
                       {" "}1 Normal
@@ -162,11 +158,8 @@ const Quarter4 = () => {
 
     <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
       <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
-        <li>JioRooms Voice Talk</li>
-        <li>JioGenie Feedbacks</li>
-        <li>Generated Test Images using Postman</li>
-        <li>Validated Gamma & CLAHE Backend Models</li>
-        <li>Created Comparison Validation Report</li>
+        <li>Monthly Review Website- Designed and implemented the login flow while establishing the backend project structure for the Monthly Review website. Managed sprint planning, defined system logic, delegated responsibilities, and supported the team by resolving queries.
+</li>
       </ul>
     </div>
   </div>

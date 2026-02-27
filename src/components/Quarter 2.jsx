@@ -66,10 +66,10 @@ const Quarter2 = () => {
                     <span>Total Issues – </span>
                   
                     <span className="text-orange-400 font-semibold">
-                      2 Critical{" "}
+                      2 Critical{" "} {" , "}
                     </span>
                     <span className="text-yellow-400 font-semibold">
-                      10 Major{" "}
+                      10 Major{" "} {" , "}
                     </span>
                     <span className="text-green-400 font-semibold">
                       1 Normal
@@ -134,23 +134,6 @@ const Quarter2 = () => {
 
         {/* 2 Equal Columns */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto items-stretch">
-
-  {/* LEFT COLUMN — Other Tasks */}
-  <div className="flex flex-col">
-    <h2 className="text-4xl font-bold mb-6 text-center">
-      Other Tasks
-    </h2>
-
-    <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
-      <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
-        <li>JioRooms Voice Talk</li>
-        <li>JioGenie Feedbacks</li>
-        <li>Generated Test Images using Postman</li>
-        <li>Validated Gamma & CLAHE Backend Models</li>
-        <li>Created Comparison Validation Report</li>
-      </ul>
-    </div>
-  </div>
 
   {/* RIGHT COLUMN — Courses */}
   <div className="flex flex-col">

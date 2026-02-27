@@ -57,13 +57,13 @@ const Quarter1 = () => {
                   <li>
                     <span>Total Issues – </span>
                     <span className="text-red-400 font-semibold">
-                      2 Blocker{" "}
+                      2 Blocker{" , "}
                     </span>
                     <span className="text-orange-400 font-semibold">
-                      4 Critical{" "}
+                      4 Critical{" , "}
                     </span>
                     <span className="text-yellow-400 font-semibold">
-                      12 Major{" "}
+                      12 Major{" , "}
                     </span>
                     <span className="text-green-400 font-semibold">
                       2 Normal
@@ -98,13 +98,15 @@ const Quarter1 = () => {
                     <span className="text-orange-400 font-semibold">
                       {" "}
                       1 Critical
+                       {" , "}
                     </span>
                     <span className="text-yellow-400 font-semibold">
                       {" "}
                       3 Major
+                        {",  "}
                     </span>
                     <span className="text-green-400 font-semibold">
-                      {" "}
+                    
                       4 Normal
                     </span>
                   </li>

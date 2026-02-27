@@ -147,8 +147,7 @@ const Hero = () => {
 
         {/* Paragraph */}
         <p className="mt-6 text-lg md:text-xl animate__animated animate__fadeInUp delay4">
-          Here, you can check out yearly performance. I try my best to create
-          things with ❤
+         Here you can explore my Yearly Performance highlights, reflecting my contributions and growth throughout the year.
         </p>
 
       </div>

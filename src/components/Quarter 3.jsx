@@ -20,13 +20,13 @@ const Quarter3 = () => {
                     <span>Total Issues – </span>
                   
                     <span className="text-orange-400 font-semibold">
-                      1 Critical{" "}
+                      1 Critical{" "} {" , "}
                     </span>
                     <span className="text-yellow-400 font-semibold">
-                      2 Major{" "}
+                      2 Major{" "} {" , "}
                     </span>
                     <span className="text-green-400 font-semibold">
-                      7 Normal
+                      7 Normal {" , "}
                     </span>
                      <span className="text-blue-400 font-semibold">
                       1 Minor
@@ -74,10 +74,10 @@ const Quarter3 = () => {
                     <span>Total Issues – </span>
                   
                     <span className="text-orange-400 font-semibold">
-                      1 Critical{" "}
+                      1 Critical{" "} {" , "}
                     </span>
                     <span className="text-yellow-400 font-semibold">
-                      2 Major{" "}
+                      2 Major{" "} {" , "}
                     </span>
                     <span className="text-green-400 font-semibold">
                       1 Normal
@@ -157,11 +157,7 @@ const Quarter3 = () => {
 
     <div className="bg-white hover:shadow-xl shadow-md p-8 border-4 border-gray-900 rounded-lg transition-all duration-300 hover:-translate-y-2 flex-grow">
       <ul className="list-disc list-inside space-y-4 font-bold text-lg text-left">
-        <li>JioRooms Voice Talk</li>
-        <li>JioGenie Feedbacks</li>
-        <li>Generated Test Images using Postman</li>
-        <li>Validated Gamma & CLAHE Backend Models</li>
-        <li>Created Comparison Validation Report</li>
+        <li>Christmas Decoration- Led and contributed to Christmas decorations, creating a cheerful festive vibe in the office.</li>
       </ul>
     </div>
   </div>
