@@ -126,7 +126,7 @@ const Quarter2 = () => {
       </div>
  <div
         id="other_task"
-        className="w-full bg-gray-50 text-gray-900 py-20 px-6"
+        className="w-full bg-gray-100 text-gray-900 py-20 px-6"
       >
         <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-center">
           Other Initiatives
